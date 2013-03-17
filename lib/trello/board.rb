@@ -18,6 +18,7 @@ module Trello
         client.create(:board,
           'name'   => fields[:name],
           'desc'   => fields[:description],
+          'idOrganization' => fields[:organization_id],
           'closed' => fields[:closed] || false)
       end
 
