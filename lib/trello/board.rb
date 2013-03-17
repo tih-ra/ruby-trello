@@ -19,6 +19,7 @@ module Trello
           'name'   => fields[:name],
           'desc'   => fields[:description],
           'idOrganization' => fields[:organization_id],
+          'prefs' => fields[:prefs],
           'closed' => fields[:closed] || false)
       end
 
